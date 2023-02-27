@@ -1,0 +1,156 @@
+@import url('https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,800;1,900&display=swap');
+
+.Form{
+    background: hsl(0, 100%, 74%);
+    background-image: url('../../public/images/bg-intro-desktop.png');
+        height: 100vh;
+        background-repeat: no-repeat; 
+        display: flex;
+        align-items: center;
+        @media only screen and (max-width: 600px) {
+            background-image: url('../../public/images/bg-intro-mobile.png');
+            background-size:100%;
+          }
+
+   
+
+    
+    .wrapper{
+       display: flex;
+       gap: 10px;
+       align-items: center;
+       @media only screen and (max-width: 600px) {
+        flex-direction: column;
+        
+      }
+       
+       
+       .right{
+        flex: 1;
+        margin-left: 10vw;
+        color: white;
+        @media only screen and (max-width: 600px) {
+            text-align: center;
+            margin-left: auto;
+            
+          }
+        
+        h1{
+            font-size: 46px;
+            font-weight: 700;
+            font-family: 'Urbanist', sans-serif;
+            margin-bottom: 25px;
+            margin-right: 8vw;
+            letter-spacing: 1px;
+            @media only screen and (max-width: 600px){
+                font-size: 40px;
+                margin-right: auto;
+            }
+        }
+        p{
+            font-size: 16px;
+
+            font-family: 'Urbanist', sans-serif;
+            margin-right: 8vw;
+            @media only screen and (max-width: 600px){
+                margin: 2vh 16vw;
+            }
+        }
+
+       }
+       .left{
+        flex: 1;
+        margin-right: 10vw;
+        @media only screen and (max-width: 600px) {
+            justify-content: center;
+            display: flex;
+            flex-direction: column;
+            margin: 0px 30px;
+            
+          }
+        .annoucement{
+            background-color: hsl(248, 32%, 49%);
+            padding: 15px ;
+            border-radius: 10px;
+            color: white;
+            text-align: center;
+            
+            margin-bottom: 20px;
+            @media only screen and (max-width: 600px){
+                padding: 2vh 20vw;
+            }
+            
+            h3{
+                font-size: 16px;
+                font-weight:700;
+                font-family: 'Urbanist', sans-serif;
+                span{
+                    font-weight: 400;
+                }
+            }
+        }
+        .formcontainer{
+            background-color: white;
+            padding: 30px ;
+            border-radius: 10px;
+           form{
+            display: flex;
+            flex-direction: column;
+            
+            gap: 10px;
+            
+            input{
+                
+                padding: 15px;
+                border-radius: 5px ;
+                border: 1px solid lightgrey;
+                font-weight: 700;
+                &:invalid{
+                    border: 2px solid red;
+
+                }
+                
+                
+            }
+            label{
+                color: red;
+                font-size: 10px;
+                text-align: end;
+                img{
+                transform: translate(-70%,-250%);
+               
+            }
+            }
+            
+            button{
+                background-color: hsl(154, 59%, 51%);
+                color: white;
+                padding: 15px;
+                border-radius: 5px ;
+                border: 1px solid lightgrey;
+                text-transform: uppercase;
+                font-weight: 600;
+                cursor: pointer;
+                &:hover{
+                    background-color: hsla(154, 59%, 51%, 0.701);
+                }
+
+            }
+            p{
+                font-size: 12px;
+                text-align: center;
+                color: hsl(246, 25%, 77%);
+                font-family: 'Urbanist', sans-serif;
+                span{
+                    color: hsl(0, 100%, 74%);
+                    font-weight: 700;
+                }
+            }
+
+           }
+
+        }
+       }
+        
+    }
+}
